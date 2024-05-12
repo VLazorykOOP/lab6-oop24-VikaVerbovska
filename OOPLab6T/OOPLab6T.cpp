@@ -122,7 +122,7 @@ public:
 	virtual double calculatePerimeter() const = 0;
 };
 
-class Square : protected Quadrilateral {
+class Square : public Quadrilateral {
 private:
 	double side;
 public:
@@ -137,7 +137,7 @@ public:
 	}
 };
 
-class Rectangle : protected Quadrilateral {
+class Rectangle : public Quadrilateral {
 private:
 	double length;
 	double width;
@@ -153,7 +153,7 @@ public:
 	}
 };
 
-class Parallelogram : protected Quadrilateral {
+class Parallelogram : public Quadrilateral {
 private:
 	double base;
 	double height;
@@ -169,7 +169,7 @@ public:
 	}
 };
 
-class Trapezoid : protected Quadrilateral {
+class Trapezoid : public Quadrilateral {
 private:
 	double base1;
 	double base2;
